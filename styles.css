@@ -58,7 +58,7 @@ p {
   display: grid;
   grid-row: 1/2;
   height: 5.5rem;
-  margin: 2rem 0 0 0;
+  margin: 2rem 2rem 0 2rem;
   padding: .5rem;
   width: 5.5rem;
 }
@@ -69,8 +69,10 @@ p {
 } 
 
 .newton-text {
-  font-size: .8rem;
+  font-size: 1rem;
   text-align: center;
+  padding: .65rem 0 0 0;
+  color: #919bab;
 
 }
 .newton-arrow {
