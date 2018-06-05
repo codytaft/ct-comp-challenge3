@@ -24,13 +24,13 @@ h4 {
 
 p {
   font-size: 1rem;
-  padding-top: 1rem 0 0 0;
+  padding: 1rem 0 0 0;
 
 }
 
 .full-wrapper {
   display: grid;
-  grid-template-columns: 1fr 5.5fr;
+  grid-template-columns: 1fr 5.7fr;
   grid-template-rows: 1fr;
   height: -webkit-fill-available;
 
@@ -48,7 +48,7 @@ p {
   border-bottom: 2px #2C3849 solid;
   display: grid;
   grid-template-rows: 1fr 1fr;
-  height: 10rem;
+  height: 12rem;
   justify-content: center;
 
 }
@@ -57,15 +57,15 @@ p {
   border-radius: 50%;
   display: grid;
   grid-row: 1/2;
-  height: 5rem;
+  height: 5.5rem;
   margin: 2rem 0 0 0;
-  padding: 1rem;
-  width: 5rem;
+  padding: .5rem;
+  width: 5.5rem;
 }
 
 .newton-text-arrow {
   height: 2rem;
-  padding-bottom: 1rem;
+  margin: 0 0 0 0;
 } 
 
 .newton-text {
