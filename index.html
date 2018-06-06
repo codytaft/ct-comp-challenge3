@@ -52,11 +52,11 @@
     <section class="main-wrapper">
       <article class="search-title-row">
         <article class="search-bar">
-          <button class="search-btns search-btn1"></button>
+          <button class="search-btns search-btn1" aria-label="hide navigation"></button>
           <input class="search-input" type="text" placeholder="Search for a job, task or resume">
-          <button class="search-btns search-btn2"></button>
-          <button class="search-btns search-btn3"></button>
-          <button class="search-btns search-btn4"></button>
+          <button class="search-btns search-btn2" aria-label="add user"></button>
+          <button class="search-btns search-btn3" aria-label="calendar"></button>
+          <button class="search-btns search-btn4" aria-label="page navigation"></button>
         </article>
         <article class="title-bar">
           <article class="title-location">
@@ -64,10 +64,10 @@
             <p class="title-bar-location"><img src="Icons/gps-gray.svg" alt="location-icon" class="location-icon-title">San Francisco, CA  +  <span class="preview-text">  Preview this post</span></p>
           </article>
           <article class="title-buttons">
-            <button class="Title-btn title-btn-open"><img src="Icons/black-dot.svg" alt="open-dot" class="open-dot">OPEN</button>
-            <button class="title-btn title-btn1"></button>
-            <button class="title-btn title-btn2"></button>
-            <button class="title-btn title-btn3"></button>
+            <button class="Title-btn title-btn-open" aria-label="open"><img src="Icons/black-dot.svg" alt="open-dot" class="open-dot">OPEN</button>
+            <button class="title-btn title-btn1" aria-label="bookmark"></button>
+            <button class="title-btn title-btn2" aria-label="edit"></button>
+            <button class="title-btn title-btn3" aria-label="trash"></button>
           </article>
         </article>
         <article class="list-nav-bar">
@@ -86,21 +86,21 @@
         <article class ="image-row-items">
           <article class="pie-charts-and-btn">
             <div class="svg-pie-chart">
-              <svg width="13rem" height="13rem" viewBox="0 0 42 42" class="donut1">
+              <svg width="13rem" height="13rem" viewBox="0 0 42 42" class="donut1" aria-label="Applicant Pie Chart">
               <circle class="donut-hole" cx="21" cy="21" r="15.91549430918954" fill="transparent"></circle>
               <circle class="donut-ring" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#4bb8c1" stroke-width="3"></circle>
               <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#d2d3d4" stroke-width="3" stroke-dasharray="30 98" stroke-dashoffset="0"></circle>
               <text x="50%" y="50%" text-anchor="middle" dy=".3em" class="circle-num">3,154</text>              
               <text x="50%" y="65%" text-anchor="middle" dy=".3em" class="circle-text">Applicants</text>              
               </svg>
-              <svg width="13rem" height="13rem" viewBox="0 0 42 42" class="donut2">
+              <svg width="13rem" height="13rem" viewBox="0 0 42 42" class="donut2" aria-label="Interviews Pie Chart">
               <circle class="donut-hole" cx="21" cy="21" r="15.91549430918954" fill="transparent"></circle>
               <circle class="donut-ring" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#17a5f7" stroke-width="3"></circle>
               <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#d2d3d4" stroke-width="3" stroke-dasharray="33 40" stroke-dashoffset="6"></circle>
               <text x="50%" y="50%" text-anchor="middle" dy=".3em" class="circle-num">1,546</text>              
               <text x="50%" y="65%" text-anchor="middle" dy=".3em" class="circle-text">Interviews</text>              
               </svg>
-              <svg width="13rem" height="13rem" viewBox="0 0 42 42" class="donut3">
+              <svg width="13rem" height="13rem" viewBox="0 0 42 42" class="donut3" aria-label="Forwards Pie Chart">
               <circle class="donut-hole" cx="21" cy="21" r="15.91549430918954" fill="transparent"></circle>
               <circle class="donut-ring" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#b166b2" stroke-width="3"></circle>
               <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#d2d3d4" stroke-width="3" stroke-dasharray="70 20" stroke-dashoffset="40"></circle>
@@ -111,8 +111,8 @@
             <button class="pie-chart-btn chart-btns" type="text">TOTALS - Out of 5,231 views</button>
           </article>
           <article class="bar-graphs">
-            <img src="Images/bar-graph2.png" alt="bar-graph" class="bar-graph">
-            <button class="bar-graph-btn chart-btns">NUMBER/GUESSES</button>
+            <img src="Images/bar-graph2.png" alt="bar-graph" class="bar-graph" aria-label="Bar Graph">
+            <button class="bar-graph-btn chart-btns" aria-label="bar graph">NUMBER/GUESSES</button>
           </article>
         </article>
       </article>
@@ -120,7 +120,7 @@
         <article class="left-body-section">
           <article class="job-description-form">
             <h4 class="form-title form-row1">JOB DESCRIPTION</h4>
-            <div class="form-row1 form-column2"><button class="form-btn"><img src="Icons/pencil-wht.svg" alt="edit-pencil-image" class="pencil-icon">EDIT</button></div>
+            <div class="form-row1 form-column2"><button class="form-btn" aria-label="edit button"><img src="Icons/pencil-wht.svg" alt="edit-pencil-image" class="pencil-icon">EDIT</button></div>
             <h4 class="form-title form-row2 form-row">POSITION TITLE</h4>
             <p class="form-text form-row2 form-row form-column2">Customer Service Representative</p>
             <h4 class="form-title form-row3 form-row">LOCATION</h4>
@@ -141,15 +141,15 @@
         </article>
         <article class="right-body-section">
           <article class="social-btn-section">
-            <button class="social-btn facebook-btn">Post to Facebook</button>
-            <button class="social-btn tweet-btn">Tweet this Job</button>
-            <button class="social-btn linkedin-btn">Post to Linkedin</button>
+            <button class="social-btn facebook-btn" aria-label="facebook button">Post to Facebook</button>
+            <button class="social-btn tweet-btn" aria-label="twitter button">Tweet this Job</button>
+            <button class="social-btn linkedin-btn" aria-label="linked in button">Post to Linkedin</button>
           </article>
           <article class="link-section">
             <h3 class="link-title"><img src="Icons/earth.svg" alt="globe-link-image" class="sm-btn-icons">Link to this Job</h3>
             <p class="link-text">Corpus callosum consciousness the carbon in our apple pies, gathered by gravity.</p>
             <article class="link-copy">
-              <input type="text" Value="Link to website here" class="link-input">
+              <input type="text" Value="Link to website here" class="link-input" aria-label="website link">
               <button class="copy-btn" aria-label="Copy">Copy</button>
             </article>
           </article>
@@ -157,20 +157,19 @@
             <h3 class="widget-title"><img src="Icons/website.svg" alt="button-widget-image" class="sm-btn-icons">Use the Button Widget</h3>
             <p class="widget-text">Made in the interiors of collapsing stars concept of the number one.</p>
             <article class="widget-copy">
-              <input type="text" value="Widget cody here" class="widget-input">
+              <input type="text" value="Widget cody here" class="widget-input" aria-label="widget link">
               <button class="copy-btn" aria-label="Copy">Copy</button>
             </article>
           </article>
           <article class="email-section">
             <h3 class="email-title"><img src="Icons/sent-mail.svg" alt="paper-plane-email-image" class="sm-btn-icons">Upload Resumes by Email</h3>
             <p class="email-text">Inconspicuous motes of rock and gas! Culture worldlets billions upon billions. </p>
-            <input type="text" placeholder="tomtizzy@gmail.com" class="email-input">
+            <input type="text" placeholder="tomtizzy@gmail.com" class="email-input" aria-label="email input">
           </article>
         </article>
         </article>
       </article>
     </section>
   </section>
-  
 </body>
 </html>
