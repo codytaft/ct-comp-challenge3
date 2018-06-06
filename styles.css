@@ -770,7 +770,12 @@ p {
 
 }*/
 
-/*@media screen and (max-width: 319px) {
-  
+/*@media screen and (max-width: 321px) {
+  .search-btn1
+  .search-btn2
+  .search-btn3 {
+    display: none;
+  }
+*/
 
 
