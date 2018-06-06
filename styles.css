@@ -293,8 +293,15 @@ p {
 .horizontal-navs {
   display: inline;
   font-size: 1rem;
-  padding: 0 3rem .7rem 0;
+  margin: 0 3rem 0 0;
+  padding-bottom: 1.2rem;
 }
+
+.horizontal-navs:hover {
+  color: #333;
+  border-bottom: 5px solid #3fb1f3;
+}
+
 
 /*Main Body*/
 
