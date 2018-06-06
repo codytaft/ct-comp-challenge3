@@ -462,9 +462,9 @@ p {
 }
 
 .form-btn {
+  align-items: center;
   background-color: #808CAA;
   border: 0;
-  align-items: center;
   color: #F9FFFF;
   font-size: .8rem;
   margin: 1.3rem 0 1.3rem 0;
@@ -543,10 +543,10 @@ p {
 }
 
 .form-img {
-  width: 3rem;
-  height: 3rem;
   border-radius: 50%;
+  height: 3rem;
   margin-right: 1rem;
+  width: 3rem;
 }
 
 .tom-tizzy {
@@ -762,11 +762,20 @@ p {
     margin: 1rem 0 1rem 0;
   }
 }
-@media screen and (max-width: 800px) {
+/*@media screen and (max-width: 800px) {
 
   .image-row {
     display: none;
   }
-  
-}
+
+}*/
+
+/*@media screen and (max-width: 321px) {
+  .search-btn1
+  .search-btn2
+  .search-btn3 {
+    display: none;
+  }
+*/
+
 
