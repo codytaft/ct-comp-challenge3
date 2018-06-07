@@ -188,6 +188,7 @@ p {
 */}
 
 .search-btns {
+  display: flex;
   padding: 1rem;
   margin: 0;
   width: 7rem;
@@ -248,7 +249,6 @@ p {
 
 .pie-charts-and-btn {
   align-content: center;
-  display: grid;
 }
 
 .svg-pie-chart {
@@ -271,7 +271,11 @@ p {
   font-size: .7rem;
   height: 2rem;
   justify-content: center;
-  margin: 1rem 12rem 0 12rem;
+  margin: auto;
+}
+
+.pie-chart-btn2 {
+  display: none;
 }
 
 .bar-graph {
@@ -424,9 +428,9 @@ p {
 
 .job-description-form {
   display: grid;
-  grid-column: 1/2;
+/*  grid-column: 1/2;
   grid-template-columns: 1fr 3fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;*/
   /*height: -webkit-fill-available;*/
   width: 47rem;
 }
@@ -595,6 +599,7 @@ p {
 }
 
 .link-input {
+  padding-left: .5rem;
   width: 100%;
 }
 
@@ -627,6 +632,7 @@ p {
 }
 
 .widget-input {
+  padding-left: .5rem;
   width: 100% ;
 }
 
@@ -641,6 +647,7 @@ p {
   height: 3rem;
   justify-content: stretch;
   padding-top: 1rem;
+
 }
 
 .email-section {
@@ -649,7 +656,8 @@ p {
 
 .email-input {
   height: 3rem;
-  width: 100%;
+  padding-left: .5rem;
+  width: 97%;
 }
 
 .email-title {
@@ -696,10 +704,10 @@ p {
   }
 
   .main-body {
-/*    display: block;
-*/  display: flex;
-    flex-direction: column;
     align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
   }
 
   .table-section {
@@ -731,6 +739,7 @@ p {
 
   .link-input-section {
     padding-top: 0;
+    padding-left: .5rem;
   }
   
   .widget-title {
@@ -744,6 +753,7 @@ p {
   .widget-section {
     border-bottom: none;
     padding-top: 0;
+    padding-left: .5rem;
   }
 
   .widget-input-section {
@@ -756,7 +766,7 @@ p {
 
   .email-input {
     height: 2.7rem;
-    width: 99%;
+    /*width: 98%;*/
   }
   
   .email-text {
@@ -764,7 +774,8 @@ p {
   }
 
   .email-section {
-    padding-top: 0
+    padding-top: 0;
+    padding-left: .5rem;
   }
 
   .email-input-section {
@@ -782,13 +793,252 @@ p {
   }
   .horizontal-nav-bar {
     content: url(Icons/more.svg);
-    width: 1rem;
+    width: 45rem;
     height: 3rem;
+  }
+
+  .list-nav-bar {
+    margin: 0;
+  }
+
+  .title-bar {
+    margin: 1rem 3rem;
+  }
+}
+@media screen and (max-width: 850px) {
+  .title-bar-title {
+    font-size: 1.3rem;
+  }
+
+  .title-bar-location {
+    padding: .5rem 0 0 0;
+    font-size: .8rem;
+  }
+
+  .search-bar {
+    height: 3.5rem;
+  }
+
+  .search-btns {
+    width: 5rem;
+  }
+
+  .search-input {
+    font-size: .9rem;
   }
 }
 
-@media screen and (max-width: 850px) {
-  
+@media screen and (max-width: 760px) {
+  .job-description-form {
+    width: 40rem;
+  }
+
+  .form-title {
+    font-size: .7rem;
+  }
+
+  .horizontal-nav-bar {
+    width: 35rem;
+  }
 }
 
+@media screen and (max-width: 675px) {
+  .title-bar {
+    display: block;
+  }
 
+  .title-location {
+    text-align: center;
+  }
+
+  .title-buttons {
+    justify-content: center;
+    margin-top: .5rem;
+  }
+
+  .pie-chart-btn {
+    display: none;
+  }
+
+  .pie-chart-btn2 {
+    align-content: center;
+    border-radius: 2rem;
+    display: flex;
+    font-size: .7rem;
+    height: 2rem;
+    justify-content: center;
+    margin: auto;
+  }
+
+  .job-description-form {
+    display: block;
+    text-align: center;
+    width: 25rem;
+  }
+
+  .form-row {
+    border-bottom: 1px solid #e9e8e8;
+    display: block;
+    padding: 0;
+  }
+
+  .form-row1 {
+    display: block;
+    padding: 0;
+  }
+  
+  .form-title {
+    padding: .7rem 0 ;
+  }
+
+  .form-text {
+    font-size: 0.7rem;
+    padding: 0.3rem 0;
+  }
+
+  .form-row7 {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  .form-btn {
+    font-size: 0.5rem;
+    margin: 0 0 0.3rem 0;
+    width: 3.5rem;
+  }
+
+  .form-img {
+    display: none;
+  }
+
+  .horizontal-nav-bar {
+    width: 20rem;
+  }
+
+  .image-row-items {
+    margin: 0;
+  }
+
+  .social-section {
+    width: 59%;
+  }
+
+  .facebook-btn {
+    height: 2rem;
+    font-size: 0.75rem;
+  }
+
+  .tweet-btn {
+    height: 2rem;
+    font-size: 0.75rem;
+  }
+
+  .linkedin-btn {
+    height: 2rem;
+    font-size: 0.75rem;
+  }
+
+  .link-input-section {
+    height: 2rem;
+  }
+
+  .widget-input-section {
+    height: 2rem;
+  }
+
+  .email-input {
+    height: 1.7rem;
+  }
+
+@media screen and (max-width: 600px) {
+  .social-section {
+    display: block;
+  }
+
+  .social-input-section {
+    padding-top: 1rem;
+  }
+
+  .link-input-section {
+    padding: 0;
+  }
+
+  .widget-section {
+    padding: 0;
+  }
+
+  .email-section {
+    padding: 1rem 0 0 0;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .title-btn-open {
+    height: 2rem;
+    width: 5rem;
+  }
+
+  .title-btn {
+    height: 2rem;
+    width: 2rem;
+  }
+
+  body {
+    height: 99rem;
+  }
+
+@media screen and (max-width: 500px) {
+  .search-btn2 {
+    display: none;
+  }
+
+  .search-btn3 {
+    display: none;
+  }
+
+  .search-btn4 {
+    display: none;
+  }
+
+  .bar-graph {
+    height: 10rem;
+    width: 23rem;
+  }
+
+  body {
+  height: 96rem;
+  }
+
+@media screen and (max-width: 415px) {
+  .title-bar-title {
+    font-size: 1rem;
+  }
+
+  .title-bar-location {
+    font-size: .5rem
+  }
+
+  .job-description-form {
+    width: 23rem;
+  }
+
+  .search-input {
+    font-size: .7rem;
+  }
+
+  .search-bar {
+    height: 2.5rem;
+  }
+
+  .search-btns {
+    width: 3rem;
+  }
+
+@media screen and (max-width: 330px) {
+  .search-input {
+    font-size: .5rem;
+  }
+
+  body {
+    height: 96rem
+  }
