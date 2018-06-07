@@ -19,9 +19,6 @@ h3 {
   font-weight: 700;
 }
 
-h4 {
-}
-
 p {
   font-size: 1rem;
 }
@@ -85,7 +82,6 @@ p {
 
 .nav-bar-items {
   color: #B8C3D5;
-  /*padding: 0 0 0 2rem;*/
 }
 
 .main-nav {
@@ -177,22 +173,19 @@ p {
 
 .main-wrapper {
   background-color: #EEF2F6;
-  display: grid;
-  grid-template-rows: 1fr 1.33fr 3.33fr;
   height: -webkit-fill-available;
 }
 
 .search-title-row {
   background-color: #FFFFFF;
-  display: grid;
-  grid-row: 1/2;
-}
+  padding-bottom: .1rem;
 
+}
 .search-bar {
   display: flex;
   height: 5.5rem;
-  justify-content: stretch;
-}
+/*  justify-content: stretch;
+*/}
 
 .search-btns {
   padding: 1rem;
@@ -245,14 +238,12 @@ p {
 .image-row {
   background-color: #EDF2F6;
   border-bottom: 1px solid #D6DBE0;
-  display: grid;
-  grid-row: 2/3;
-  padding: 1.3rem;
 }
 
 .image-row-items {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  justify-content: space-between;
+  margin: 3rem 3rem;
 }
 
 .pie-charts-and-btn {
@@ -332,9 +323,9 @@ p {
 /*Title Section*/
 
 .title-bar {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
   margin: 3rem;
+  justify-content: space-between;
 }
 
 .title-bar-title {
@@ -422,10 +413,13 @@ p {
 
 .main-body {
   background-color: #EDF2F6;
-  display: grid;
-  grid-template-columns: 3fr 1.7fr;
+  display: flex;
   justify-content: center;
-  height: -webkit-fill-available;
+  /*height: -webkit-fill-available;*/
+}
+
+.table-section {
+  margin: 4rem 1rem 0 4rem;
 }
 
 .job-description-form {
@@ -433,8 +427,7 @@ p {
   grid-column: 1/2;
   grid-template-columns: 1fr 3fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  height: -webkit-fill-available;
-  margin: 4rem 0 0 4rem;
+  /*height: -webkit-fill-available;*/
   width: 47rem;
 }
 
@@ -553,24 +546,18 @@ p {
   display: flex;
 }
 
-.left-body-section {
-  margin-right: 1rem;
-}
 /*Main Body Right*/
 
-.right-body-section {
-  display: grid;
-  grid-column: 2/3;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  height: -webkit-fill-available;
-  margin: 2rem 2rem 0 0;
-  padding: 2rem 2rem 0 0;
-  width: 18rem;
+.social-section {
+  margin: 4rem 4rem 0 1rem;
+}
+
+.social-input-section {
+  width: 100%;
 }
 
 .social-btn-section {
-  display: grid;
-  grid-row: 1/2;
+
 }
 
 .facebook-btn {
@@ -579,7 +566,7 @@ p {
   font-size: 1rem;
   height: 3rem;
   margin: 0 0 1rem 0;
-  width: 21rem;
+  width: 100%;
 }
 
 .tweet-btn {
@@ -588,7 +575,7 @@ p {
   font-size: 1rem;
   height: 3rem;
   margin: 0 0 1rem 0;
-  width: 21rem;
+  width: 100%;
 }
 
 .linkedin-btn {
@@ -596,7 +583,7 @@ p {
   color: #F9FFFF;
   font-size: 1rem;
   height: 3rem;
-  width: 21rem;
+  width: 100%;
 }
 
 .copy-btn {
@@ -604,13 +591,11 @@ p {
 }
 .link-section {
   border-bottom: 1px #2C3849 solid;
-  display: grid;
-  grid-row: 2/3;
   padding: 1.7rem 0 1rem 0;
 }
 
 .link-input {
-  width: 17rem;
+  width: 100%;
 }
 
 .link-title {
@@ -621,7 +606,7 @@ p {
   padding-top: .5rem;
 }
 
-.link-copy {
+.link-input-section {
   display: flex;
   height: 3rem;
   justify-content: stretch;
@@ -630,8 +615,6 @@ p {
 
 .widget-section {
   border-bottom: 1px #2C3849 solid;
-  display: grid;
-  grid-row: 3/4;
   padding: .5rem 0 1rem 0;
 }
 
@@ -644,28 +627,32 @@ p {
 }
 
 .widget-input {
-  width: 17rem;
+  width: 100% ;
 }
 
-.widget-copy {
+.widget-input-section {
   display: flex;
   height: 3rem;
   justify-content: stretch;
   padding-top: 1rem;
 }
 
+.email-input-section {
+  height: 3rem;
+  justify-content: stretch;
+  padding-top: 1rem;
+}
+
 .email-section {
-  display: grid;
-  grid-row: 4/5;
   padding: 1rem 0 1rem 0;
 }
 
 .email-input {
-  width: 21rem;
+  height: 3rem;
+  width: 100%;
 }
 
 .email-title {
-  height: 0;
   padding-top: 1rem;
 }
 
@@ -685,97 +672,123 @@ p {
 
   .full-wrapper {
     grid-template-columns: none;
-
-  }
+    display: unset;
+    grid-template-rows: none;
+  } 
 }
 
 @media screen and (max-width: 1180px) {
-
-  .bar-graphs {
-    grid-column: 1;
-  }
-
   .image-row-items {
     display: block;
   }
 
   .bar-graph {
-    margin-top: 3rem;
-    width: 45rem;
-    height: 20rem;
+    margin-top: 1rem;
   }
 
-  .svg-pie-chart {
-    justify-content: space-evenly;
-  }
-
-  .main-body {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    height: 87%;
-  } 
-
-  .title-bar {
-    display: flex;
-    justify-content: center;
-     grid-template-columns: none; 
-     margin: 0; 
+  .main-wrapper {
+    height: 51rem;
   }
 
   .list-nav-bar {
     display: flex;
     justify-content: center;
-    margin: 0; 
   }
 
-  .left-body-section {
-    margin-right: 0;
+  .main-body {
+/*    display: block;
+*/  display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
-  .job-description-form {
-    margin: 4rem 4rem 0 4rem;
+  .table-section {
+    margin: 0;
+    display: flex;
+    justify-content: center;
   }
-}
+
+  .social-section {
+    background-color: #edf2f6;
+    display: flex;
+    margin: 1rem 0 0 0;
+    justify-content: space-between;
+    width: 65%;
+  }
+
+  .link-title {
+    display: none;
+  }
+
+  .link-text {
+    display: none;
+  }
+
+  .link-section {
+    border-bottom: none;
+    padding-top: 0;
+  }
+
+  .link-input-section {
+    padding-top: 0;
+  }
+  
+  .widget-title {
+    display: none;
+  }
+
+  .widget-text {
+    display: none;
+  }
+
+  .widget-section {
+    border-bottom: none;
+    padding-top: 0;
+  }
+
+  .widget-input-section {
+    padding-top: 0;
+  }
+
+  .email-title {
+    display: none;
+  }
+
+  .email-input {
+    height: 2.7rem;
+    width: 99%;
+  }
+  
+  .email-text {
+    display: none;
+  }
+
+  .email-section {
+    padding-top: 0
+  }
+
+  .email-input-section {
+    padding-top: 0;
+  }
+
+@media screen and (max-width: 1080px) {
+  .horizontal-navs {
+    font-size: .8rem;
+  }
 
 @media screen and (max-width: 900px) {
-  .list-nav-bar {
+  .horizontal-navs {
     display: none;
   }
-
-  .search-title-row {
-    display: unset;
-    height: fit-content;
-  }
-
-  .svg-pie-chart {
-    margin-top: -13rem;
-  }
-  .main-body {
-    height: 153%;
-  }
-  .right-body-section {
-    margin-top: -15rem;
-  }
-
-  .title-bar {
-    margin: 1rem 0 1rem 0;
+  .horizontal-nav-bar {
+    content: url(Icons/more.svg);
+    width: 1rem;
+    height: 3rem;
   }
 }
-/*@media screen and (max-width: 800px) {
 
-  .image-row {
-    display: none;
-  }
-
-}*/
-
-/*@media screen and (max-width: 321px) {
-  .search-btn1
-  .search-btn2
-  .search-btn3 {
-    display: none;
-  }
-*/
+@media screen and (max-width: 850px) {
+  
+}
 
 
